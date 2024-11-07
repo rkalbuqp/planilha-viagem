@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planilha de Despesas - Viagem</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Planilha de Despesas - Viagem</h1>
+
+      <section class="receitas">
+        <h2>Receitas</h2>
+        <p>
+          Valor Total Disponível:
+          <span class="valor" id="valor_total_disponivel">R$ 1.400,00</span>
+        </p>
+      </section>
+
+      <section class="despesas">
+        <h2>Gastos Mensais (Multiplicado por 2)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Total</th>
+              <th>Kassia</th>
+              <th>Micaela</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela_despesas">
+            <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
+          </tbody>
+        </table>
+        <button onclick="adicionarDespesa()">Adicionar Nova Despesa</button>
+        <p class="total" id="total_despesas">Total Despesas: R$ 1.338,00</p>
+      </section>
+
+      <section class="saldo">
+        <h2>Saldo Final para cada</h2>
+        <p id="saldo_final">Saldo Disponível após Despesas: R$ 62,00</p>
+      </section>
+
+      <!-- Nova seção para exibir o total gasto por Kassia e Micaela -->
+      <section class="totais">
+        <h2>Totais Individuais</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="tabela_totais">
+            <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
